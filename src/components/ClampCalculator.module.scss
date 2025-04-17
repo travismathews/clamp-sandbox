@@ -1,0 +1,79 @@
+$teal: #4fbeb4;
+$teal-dark: #388c84;
+$white: #fff;
+$gray: #eee;
+$text: #223;
+
+.container {
+  background: $gray;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  font-family: system-ui, sans-serif;
+  color: $text;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section {
+  flex: 1;
+  min-width: 280px;
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: $teal-dark;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+
+  input {
+    width: 100%;
+    padding: 0.4rem 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+  }
+}
+
+.output {
+  margin-bottom: 2rem;
+
+  h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: $teal-dark;
+  }
+
+  code {
+    display: block;
+    background: $white;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 0.95rem;
+    border: 1px solid #ccc;
+  }
+}
+
+.preview {
+  background: $teal;
+  color: $white;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  font-weight: 600;
+  transition: font-size 0.3s ease;
+}

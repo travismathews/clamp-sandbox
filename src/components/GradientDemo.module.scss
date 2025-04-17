@@ -1,0 +1,32 @@
+.gradient-text {
+  font-size: 2rem;
+  font-size: clamp(2rem, calc(5vw + 2rem), 4rem);
+  font-weight: bold;
+  background: linear-gradient(90deg, #49f86f, #75c1ff, #be6aff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.image-text {
+  font-size: 4rem;
+  font-size: clamp(4rem, calc(5vw + 2rem), 8rem);
+  font-weight: bold;
+  background: url("/assets/images/space_bg.jpg") no-repeat center;
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: moveBackground 5s infinite alternate ease-in-out;
+}
+
+
+/* Keyframes for background animation */
+@keyframes moveBackground {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 100% center;
+  }
+}
